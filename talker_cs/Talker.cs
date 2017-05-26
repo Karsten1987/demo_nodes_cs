@@ -34,12 +34,17 @@ namespace talker_cs
 
                             //Create a message 
                             using (std_msgs.msg.Int32 testMsg = new std_msgs.msg.Int32 ()) {
-                            testMsg.data = 123;
+                            testMsg.data = 999666;
 
-                            //And now publish the message
-                            Console.WriteLine("Publishing " + testMsg.data);
-							testPublisher.Publish (testMsg);
+                            for (int i = 0; i < 1; ++i)
+                            {
+                                //And now publish the message
+                                Console.WriteLine("Publishing " + testMsg.data);
+                                testPublisher.Publish(testMsg);
+                                System.Threading.Thread.Sleep(1000);
+                            }
 							//Free unmanaged memory
+
                             
                             }
 

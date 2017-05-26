@@ -70,17 +70,14 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="rclcs">
-      <HintPath>..\..\..\install\bin\rclcs.dll</HintPath>
+    <Reference Include="rclcs, Version=1.0.6354.28007, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\install\bin\rclcs.dll</HintPath>
     </Reference>
     <Reference Include="std_msgs">
       <HintPath>..\..\..\..\install\bin\std_msgs.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="test_msgs">
-      <HintPath>..\..\..\install\bin\test_msgs.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="builtin_interfaces">
       <HintPath>..\..\..\..\install\bin\builtin_interfaces.dll</HintPath>
     </Reference>
